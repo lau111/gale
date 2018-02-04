@@ -1,0 +1,2 @@
+rails g model Addreskarismaster cardnumber:string branchnumber:string psnlarea:string asgnministrator:string asgnlimit:string oldcardnumber:string buildingname:string roomnumber:string unauthorized:string servicestyle:string officename:string fstname:string lstname:string kananame:string living:string phone:string household:string gender:string handicapped:string homeday:string hometime:string memo:text newtenantdate:date vpname:string vpdate:date dltsign:string dltdate:date point:string
+#

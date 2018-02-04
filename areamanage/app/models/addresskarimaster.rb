@@ -1,0 +1,2 @@
+class Addresskarimaster < ApplicationRecord
+end

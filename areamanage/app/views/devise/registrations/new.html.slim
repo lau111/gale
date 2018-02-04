@@ -1,0 +1,9 @@
+= twitter_bootstrap_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+  = devise_error_messages!
+  = f.inputs t 'Sign up', :class => 'sign_in' do
+    = f.text_field :user_name, t(".user_name")
+    = f.text_field :user_id, t(".user_id")
+    = f.password_field :password, t(".password")
+    = f.password_field :password_confirmation, t(".password_confirmation")
+    = f.actions do
+      = f.submit t "Sign up"

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Areamanage</title>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="header">
+      <%= link_to image_tag('appforJW.png', class: 'logo'), root_path %>
+      <% if notice %>
+      <% elsif alert %>
+      <% end %>
+
+      <% if admin_signed_in? %>
+        <%= link_to "ログアウト", destroy_admin_session_path, method: :delete %>
+      <% end %>
+
+    </div>
+
+      <div class="container">
+
+        <div class="footer">
+          <%= link_to image_tag('jwcom.png', class: 'jwlogo'), "http://jw.org/ja" %>
+        </div>
+
+        <script type="text/javascript">
+        $(function(){
+                $('.sub_menu').hide();
+                $('.main_menu').click(function(){
+                        $('ul.sub_menu').slideUp();
+                        if($('+ul.sub_menu',this).css('display') == 'none'){
+                                $('+ul.sub_menu',this).slideDown();
+                        }
+                });
+        });
+        </script>
+
+        <div class="adj_line">
+
+          <%= yield %>
+
+        </div>
+
+      </div>
+
+  </body>
+
+</html>
+
+----------------------　index.html.erb
+
+<ul id="menu">
+
+<li><div class="main_menu">メインメニュー</div>
+    <ul class="sub_menu">
+      <li><%= link_to "奉仕区域", :controller => "holeareamap", :action => "show" %></li>
+      <li><a href="#">掲示板</a></li>
+      <li><a href="#">計画・スケジュール</a></li>
+      <li><a href="#">管理者へ報告</a></li>
+    </ul>
+</li>
+
+<li><div class="main_menu">管理者用メニュー</div>
+    <ul class="sub_menu">
+      <li><a href="#">入出庫管理</a></li>
+      <li><a href="#">登録</a></li>
+      <li><a href="#">更新(修正)</a></li>
+      <li><a href="#">削除</a></li>
+      <li><a href="#">訪問拒否宅への訪問計画</a></li>
+      <li><a href="#">区域網羅進捗状況</a></li>
+    </ul>
+</li>
+-------------------------------------------
+</ul>

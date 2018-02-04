@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cardnumber: MyString
+  branchnumber: MyString
+  psnlarea: MyString
+  asgnministrator: MyString
+  asgnlimit: MyString
+  oldcardnumber: MyString
+  buildingname: MyString
+  roomnumber: MyString
+  unauthorized: MyString
+  servicestyle: MyString
+  officename: MyString
+  fstname: MyString
+  lstname: MyString
+  kananame: MyString
+  living: MyString
+  phone: MyString
+  household: MyString
+  gender: MyString
+  handicapped: MyString
+  homeday: MyString
+  hometime: MyString
+  memo: MyText
+  newtenantdate: 2018-01-20
+  vpname: MyString
+  vpdate: 2018-01-20
+  dltsign: MyString
+  dltdate: 2018-01-20
+  point: MyString
+
+two:
+  cardnumber: MyString
+  branchnumber: MyString
+  psnlarea: MyString
+  asgnministrator: MyString
+  asgnlimit: MyString
+  oldcardnumber: MyString
+  buildingname: MyString
+  roomnumber: MyString
+  unauthorized: MyString
+  servicestyle: MyString
+  officename: MyString
+  fstname: MyString
+  lstname: MyString
+  kananame: MyString
+  living: MyString
+  phone: MyString
+  household: MyString
+  gender: MyString
+  handicapped: MyString
+  homeday: MyString
+  hometime: MyString
+  memo: MyText
+  newtenantdate: 2018-01-20
+  vpname: MyString
+  vpdate: 2018-01-20
+  dltsign: MyString
+  dltdate: 2018-01-20
+  point: MyString

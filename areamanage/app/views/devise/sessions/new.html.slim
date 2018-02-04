@@ -1,0 +1,8 @@
+= twitter_bootstrap_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+  = f.inputs t 'Sign in', :class => 'sign_in' do
+    = f.text_field :user_id, t(".user_id")
+    = f.password_field :password, t(".password")
+    - if devise_mapping.rememberable?
+      = f.check_box :remember_me, t(".remember_me")
+    = f.actions do
+      = f.submit t "Sign in"

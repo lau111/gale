@@ -1,0 +1,28 @@
+# 0.new areacard number
+# 1.gou / banchi
+# 2.personal area
+# 3.assign ministrator
+# 4.assign limit
+# 5.old arecard number
+# 6.building
+# 7.room number
+# 8.Unauthorized
+# 9.service style
+# 10.office name
+# 11.firstname
+# 12.lastname
+# 13.setai kana
+# 14.living
+# 15.phone
+# 16.household style
+# 17.gender
+# 18.handicapped
+# 19.visit day
+# 20.visit time
+# 21.comment
+# 22.tenant
+# 23.VPname
+# 24.VPdate
+# 25.delete sign
+# 26.delete date
+# 27.zahyou

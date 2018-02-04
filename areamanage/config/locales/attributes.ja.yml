@@ -1,0 +1,21 @@
+ja:
+  activerecord:
+    attributes:
+      admin:
+        username: 'アカウント名'
+        email: 'メールアドレス'
+        password:  'パスワード'
+        password_confirmation:  'パスワード(再入力)'
+        remember_me:  'ログイン状態を保持する'
+        "Login": "ログイン"
+        "Log in": "ログイン"
+        "Sign up": "ユーザー登録"
+        "Update": "更新"
+        "Forgot your password?": "パスワード忘れはこちら"
+        "Send me reset password instructions": "パスワード再発行"
+        "Resend confirmation instructions": "パスワード再発行"
+        "Didn't receive confirmation instructions?": "確認メールの再送信"
+        "Didn't receive unlock instructions?": "アカウント凍結解除メールの再送信"
+      post:
+        title: '題名'
+        body:  '内容'

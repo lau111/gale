@@ -1,0 +1,184 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .spriteBox {
+ }
+
+ .spriteBox a {
+   display:block;   /* ブロック要素にします */
+   overflow:hidden; /* はみ出ないようにします */
+   width:50px;
+   height:50px;    /* 表示領域を指定するためheigthも指定 */
+   margin:2 auto;
+   background:url(btn.png) 0 0 no-repeat;
+   /* 追加で記入　テキストを見えなくします。 */
+   text-indent:100%;
+   white-space:nowrap;
+ }
+ .spriteBox a:hover { /* hover時のイベント */
+   background-position: 50 0px; /* 横は0　縦に-100pxずらす 起点は左上なので注意*/
+ }
+
+p.resizeimage {
+    max-width:inherit; /* 最大幅 */
+    min-width: 240px; /* 最小幅 */
+ }
+
+p.resizeimage img { width: 100%; }
+
+ .adj_line {
+      line-height:250%;
+      font-size:12pt;
+ }
+
+*{
+     margin:5;
+     padding:2;
+ }
+
+ header{
+     font-size:10pt;
+     padding:2;
+     width:100%;
+     top:0;
+     left: 0;
+     margin: 0;
+     height:45px;
+     position:absolute;
+     background:whitesmoke;
+     z-index:10;
+ }
+
+/* .box{
+     width:100%;
+     height:105px;
+     background:whitesmoke;
+ }
+*/
+
+.box {
+	float: left;1
+}
+
+.boxContainer {
+	overflow: hidden;
+}
+
+/* clearfix */
+.boxContainer:before,
+.boxContainer:after {
+    content: "";
+    display: flex;
+    align-items: center;
+}
+
+.boxContainer:after {
+    clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.boxContainer {
+    zoom: 1;
+}
+
+ .margin-top{
+     margin-top:2px;
+ }
+
+ .container {
+   position: relative;
+   z-index: 1;
+   width: 100％;
+   background-image: url("背景コルク.png");
+   background-repeat: repeat;
+   background-attachment: fixed;
+ }
+
+.footer{
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  margin: 2 auto;
+  text-align: left;
+  background-image: url("footerBG.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+ .center {
+   text-align: center;
+ }
+
+ .vcenter {
+   height: 34px;
+   display:flex;
+   align-items: center;
+   justify-content:center;
+ }
+
+ .jwlogo {
+   width: 24px;
+   margin: 2;
+ }
+
+ .logo {
+   width: 320px;
+   margin: 2;
+ }
+
+a {
+        text-decoration:none;
+}
+ul#menu, ul.sub_menu{
+        list-style:none;
+        margin:0;
+        padding:0;
+}
+#menu{
+        width:100% auto;
+        margin:5px;
+        border:1px solid #e5e4e6;
+        border-bottom:none;
+}
+.main_menu{
+        background:#e76f4a;
+        color:#ffffff;
+        font-size:18pt;
+        font-weight:bold;
+        text-align: center;
+        padding:5px;
+        margin:5px;
+        cursor:pointer;
+        width:100% auto;
+        height:34px;
+        border:1px solid #e5e4e6;
+}
+.sub_menu li{
+        background:whitesmoke;
+        padding:5px 5px 0;
+        border:1px solid #e5e4e6;
+        font-size:16pt;
+        font-weight:bold;
+        text-align:center;
+        width:100% auto;
+        height:34px;
+        margin:-1px 0 0 -1px;
+}
+.sub_menu li a{
+        color:#000000;
+        display:flex;
+        align-items: center;
+}

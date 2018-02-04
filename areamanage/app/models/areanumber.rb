@@ -1,0 +1,2 @@
+class Areanumber < ApplicationRecord
+end

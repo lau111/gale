@@ -1,0 +1,5 @@
+<ul>
+<% @addresskarimasters.each do |addresskarimaster| %>
+<li><%= link_to addresskarimaster.cardnumber, addresskarimaster_path(addresskarimaster) %>-<%= addresskarimaster.branchnumber %> ← <%= addresskarimaster.oldcardnumber %></li>
+<% end %>
+</ul>

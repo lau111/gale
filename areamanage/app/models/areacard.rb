@@ -1,0 +1,2 @@
+class Areacard < ApplicationRecord
+end

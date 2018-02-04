@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Areamanage</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+
+    <div class="header_area">
+      <div class="header_block">
+        <div class="header_box">
+          <h1>
+            <%= link_to image_tag('appforJW.png', class: 'logo'), root_path %>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="contents_wrap">
+      <div class="contents_area">
+        <div class="contents_block">
+
+          <script>
+            $(function() {
+              //1枚目のパネルを除いて非表示にする
+              $('#panel > dd:gt(0)').hide();
+              $('#panel > dt')
+                .click(function(e){
+                  //すべてのパネルを閉じる。
+                  $('#panel > dd').slideUp(500);
+                  //選択したパネルのみ表示する
+                  $('+dd', this).slideDown(500);
+                })
+            });
+          </script>
+
+            <%= yield %>
+
+            <% if notice %>
+              <p class="alert alert-notice"><%= notice %></p>
+            <% elsif alert %>
+              <p class="alert alert-error"><%= alert %></p>
+            <% end %>
+            <% if admin_signed_in? %>
+              <%= link_to "ログアウト", destroy_admin_session_path, method: :delete %>
+            <% end %>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_area">
+      <div class="footer_block">
+        <div class="footer_box">
+          <p>
+            <%= link_to image_tag('jwcom.png', class: 'jwlogo'), "http://jw.org/ja" %>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

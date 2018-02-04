@@ -1,0 +1,10 @@
+HEROKU　URL 
+
+
+aqueous-plains-68196
+https://aqueous-plains-68196.herokuapp.com/ | https://git.heroku.com/aqueous-plains-68196.git
+
+
+GitHub　リポジトリ
+
+https://github.com/lau111/gale.git
